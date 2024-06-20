@@ -1,3 +1,5 @@
+#to run the following code use command : streamlit name_generator.py
+
 import os
 import streamlit as st
 from langchain.llms import OpenAI
@@ -5,6 +7,9 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 from secret_key import openapi_key
+
+#apikey.py is my file for storing my openai api secret key
+# create your own key and store it in that file
 
 # Set OpenAI API key
 os.environ['OPENAI_API_KEY'] = openapi_key
